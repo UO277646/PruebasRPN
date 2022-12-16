@@ -131,7 +131,7 @@ class Calculadoras{
     arcTan(){
         var opderecha=this.pilaRPN.pop();
         
-        var sol=Math.atan(opderecha);
+        var sol=Math.sqrt(opderecha);
         if(!Number.isNaN(sol)){
             this.pilaRPN.push(sol);
         }
