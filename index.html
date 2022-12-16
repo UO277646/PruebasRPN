@@ -16,14 +16,30 @@
 <h1>
     Calculadora RPN
 </h1>
+<section>
+<h2></h2>
+<p>
+Una calculadora RPN no se tiene la tecla “igual”, pero si tiene una tecla “Enter”.
+En la pantalla de una calculadora RPN se muestra los valores que hay en la pila LIFO (Last In First
+Out, último en entrar primero en salir. Para que el numero entre en la pila pulsar enter.
 
+
+</p>
+<p>
+Por ejemplo, para calcular 12+3+6 se debe escribir “12 Enter 3 Enter 6 Enter + +” el primer mas sumara el 6 y 3 y luego 
+el siguiente el 9 y 12.
+</p>
+<p>
+Finalmente las operaciones unarias como raiz coseno etc se harian sobre el ultimo numero : raiz de 27 seria : 27 Enter raiz
+</p>
+</section>
 <form>
     <label for= "pantalla">Hola</label>
     <textarea id="pantalla" disabled title ="pantalla"></textarea>
 
     <input type="button"  value="arcSin" onclick="calculadora.arcSin()" >
     <input type="button"  value="arcCos" onclick="calculadora.arcCos()" >
-    <input type="button"  value="arcTan" onclick="calculadora.arcTan()" >
+    <input type="button"  value="raiz" onclick="calculadora.arcTan()" >
     <input type="button" name="op" value="&#9003;" onclick="calculadora.borrar()" >
 
     <input type="button"  value="sin" onclick="calculadora.sin()" >
